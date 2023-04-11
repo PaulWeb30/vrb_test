@@ -1,0 +1,159 @@
+@import './reset.scss';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1230px;
+	padding: 0 0px;
+	margin: 0 auto;
+
+	@media (max-width: 1300px) {
+		padding: 0 32px;
+	}
+
+	@media (max-width: 428px) {
+		padding: 0 12px;
+	}
+}
+
+.content {
+	margin: 104px 0px 30px;
+}
+
+//card styles
+
+.card {
+	position: relative;
+	margin: 10px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	min-width: 300px;
+	width: 90%;
+}
+.card-header img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 20px;
+	min-height: 250px;
+}
+
+.card-body p {
+	font-size: 17px;
+	margin: 0 0 40px;
+	word-break: break-all;
+}
+.card-body h4 {
+	font-size: 20px;
+	word-break: break-all;
+}
+.user {
+	font-size: 20px;
+	display: flex;
+	margin-top: auto;
+}
+
+.user-info h5 {
+	margin: 0;
+	word-break: break-all;
+}
+.user-info small {
+	color: #545d7a;
+}
+
+.card-delete {
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	font-size: 20px;
+	cursor: pointer;
+}
+.card_pin {
+	background: white;
+	border: none;
+	outline: none;
+	margin-top: 10px;
+	border: 1px solid #c9c9c9;
+	padding: 7px;
+	&:hover {
+		background-color: #0b0b0b;
+		color: white;
+	}
+}
+.form {
+	&_field {
+		display: flex;
+		flex-direction: column;
+		min-width: 350px;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	&_label {
+		font-family: Georama, sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #0b0b0b;
+		margin-bottom: 10px;
+	}
+
+	&_input {
+		width: 100%;
+		position: relative;
+		input {
+			font-family: Georama, sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+			width: 100%;
+			padding: 14px 0 14px 20px;
+			color: #0b0b0b;
+			outline: none;
+			background: transparent !important;
+			border: 2px solid #9d9d9d;
+			transition: all 0.2s ease;
+		}
+	}
+
+	&_error {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: #e73232;
+		margin-top: 10px;
+	}
+	&_btn {
+		display: block;
+		background: #0b0b0b;
+		color: #fff;
+		padding: 16px 0;
+		border: none;
+		text-align: center;
+		margin: 50px 0 15px;
+		width: 100%;
+		font-size: 20px;
+		transition: all 0.2s ease;
+	}
+}
+
+.input_search {
+	padding: 0 30px;
+	margin: 30px 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
