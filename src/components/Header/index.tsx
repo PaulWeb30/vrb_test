@@ -14,7 +14,7 @@ const Header = () => {
 						<Link to={'/articles'}>Articles</Link>
 					</li>
 					<li>
-						<a target={'_blank'} href="https://github.com/PaulWeb30">
+						<a target={'_blank'} href="https://github.com/PaulWeb30/vrb_test">
 							Github
 						</a>
 					</li>

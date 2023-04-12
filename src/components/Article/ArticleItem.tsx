@@ -4,7 +4,7 @@ const ArticleItem: FC<{ article: IArticle }> = ({ article }) => {
 	return (
 		<div
 			className="card"
-			key={article?.urlToImage + article?.title.substring(0, 20) + Math.random()}
+			key={article?.urlToImage + article?.title?.substring(0, 20) + Math.random()}
 		>
 			<div className="card-header">
 				<img

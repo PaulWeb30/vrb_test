@@ -11,7 +11,7 @@ const ArticlesList: FC<{ articles: IArticle[] }> = ({ articles }) => {
 				{articles?.map((el, ind) => (
 					<ArticleItem
 						article={el}
-						key={ind + el?.url + el.description.substring(5, 25) + new Date()}
+						key={ind + el?.url + el?.description?.substring(5, 25) + new Date()}
 					/>
 				))}
 			</div>
